@@ -4,13 +4,13 @@ using namespace std;
 int main() 
 {
     int n;
-    cin>>n;
+    n=5;
     
-    for( int i=1;i<=n;i++)
+    for( int i=1;i<=5;i++)
     {
-        for( int j=1;j<=n;j++)
+        for( int j=1;j<=5;j++)
         {
-            if(j<=n-1)
+            if(j<=n-i)
             {
                 cout<<" ";
             }
@@ -21,5 +21,5 @@ int main()
         }
         cout<<endl;
     }
-  return 0;  
+  return 0; 
 }

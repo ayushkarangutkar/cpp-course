@@ -5,6 +5,7 @@ void hello()
 {
     cout<<" hello world";
 }
+
 int main()
 {
     hello();

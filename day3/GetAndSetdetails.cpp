@@ -27,7 +27,7 @@ class navjeevan
         n1.age=17;
         n1.branch="CO";
         
-        n1.setter(82.60);
+        n1.setter(84.60);
         float ear=n1.getter();
         cout<<"NAME"<<"-"<<n1.name<<endl;
         cout<<"AGE"<<"-"<<n1.age<<endl;

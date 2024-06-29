@@ -13,8 +13,8 @@ class tutorial
     
     tutorial()
     {
-        cout<<"THARKI ACADEMY by yash"<<endl;
-        cout<<"here we provide thark and so many thing that you don't no"<<endl;
+        cout<<"special ACADEMY by yash"<<endl;
+        cout<<"here we provide  and so many thing that you don't no"<<endl;
     }
     ~tutorial()
     {

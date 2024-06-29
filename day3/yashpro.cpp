@@ -16,14 +16,14 @@ class student
     {
         return perc;
     }
-    void setter(float aukaat)
+    void setter(float marks)
     {
-        perc=aukaat;
+        perc=marks;
     }
     ~student()
     {
-        cout<<"12 years of experience ,mast,phd in tharakiology"<<endl;
-        cout<<"he created 1000 of thakari today and so on";
+        cout<<"12 years of experience ,mast,phd in speiology"<<endl;
+        cout<<"he created 1000 of special today and so on";
     }
 };
 int main() 
@@ -34,9 +34,9 @@ int main()
    s1.id=01;
    
    s1.setter(1);
-   float aukaat=s1.getter();
+   float marks=s1.getter();
    
-   cout<<"nalayka name"<<" - "<<s1.name<<"(best tharakiana prize in 2024)"<<endl;
+   cout<<"good name"<<" - "<<s1.name<<"(best tharakiana prize in 2024)"<<endl;
    cout<<"aukaat"<<" - "<<s1.age<<"years"<<endl;
    cout<<"apani pechana"<<" - "<<s1.id<<endl;
    cout<<"diploma in co(batch - barbaad )"<<" - "<<aukaat<<endl;

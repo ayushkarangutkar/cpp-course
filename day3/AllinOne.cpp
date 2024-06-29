@@ -4,7 +4,7 @@ using namespace std;
 class tutorial
 {
     private:
-    float fees;
+        float fees;
     
     public:
     int years;

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void  fact(int n)
+void fact(int n)
 {
  int fact=1;
  for(int i=n; i>0; i--)

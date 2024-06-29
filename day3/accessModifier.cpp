@@ -3,11 +3,11 @@
 using namespace std;
 
 class Student{
-public:
-    string name;
-    int age;
-    float cgpa;
-    string branch;
+    public:
+        string name;
+        int age;
+        float cgpa;
+        string branch;
 };
 
 int main()

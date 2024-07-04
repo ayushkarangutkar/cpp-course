@@ -1,0 +1,48 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+class calculator
+{
+    public:
+    calculator()
+    {
+        cout<<"THE CALCULATOR"<<endl;
+    }
+    void fun()
+    {
+        int a,b,c,choice;
+        cout<<"1.ADD"<<endl<<"2.SUB"<<endl<<"3.MUL"<<endl<<"4.DIV"<<endl;
+        cout<<"Enter the choice"<<endl;
+        cout<<"choice = ";
+        cin>>choice;
+        cout<<"Enter the  value"<<endl;
+        cout<<"a = ";
+        cin>>a;
+        cout<<"b = ";
+        cin>>b;
+        switch(choice)
+        {
+            case 1 : c=a+b;
+                    cout<<"Result = "<<c<<endl;
+                    break;
+            case 2: c=a-b;
+                     cout<<"Result ="<<c<<endl;
+                    break;
+            case 3 :c=a*b;
+                    cout<<"Result ="<<c<<endl;
+                    break;
+            case 4:c=a/b;
+                   cout<<"Result ="<<c<<endl;
+                    break;
+            default:cout<<"Wrong choice"<<endl;
+        }
+        
+    }
+};
+    int main()
+    {
+        calculator c1;
+        c1.fun();
+        return 0;
+    }

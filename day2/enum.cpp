@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 enum year{Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sept,Oct,Nov,Dec};

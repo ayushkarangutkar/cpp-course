@@ -5,11 +5,11 @@ using namespace std;
 class navjeevan
 {
     private:
-    float marks;
+       float marks;
     public:
-    string name;
-    int age;
-    string branch;
+      string name;
+      int age;
+      string branch;
     
     float getter()
     {

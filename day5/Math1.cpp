@@ -26,7 +26,7 @@ class sciencecal
        double num3=e;
        double res;
        float pi=3.14159265;
-       res= sin(num3*pi/180);
+       res= tan(num3*pi/180);
        return(res);
     }
 };

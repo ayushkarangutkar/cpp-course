@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<math.h>
 using namespace std;
 
  class bus
@@ -86,6 +87,33 @@ using namespace std;
     }
    cout<<"the largest number from this is - "<<large<<endl;
      }
+     void  index(int p)
+   { 
+     int i =p;
+    int arr[10]={23,67,78,98,54,34,45,67,45,43};
+    int key=98;
+    for(i=0;i<10;i++)
+    {
+        if(arr[i]==key)
+        {
+            cout<<"The index number is - "<<i<<endl;
+        }
+    }
+   }
+       double lan(double f)
+    {
+        double num3=f;
+        double res;
+        res= ceil(f);
+        return (res);
+    }
+    double ran(double d)
+    {
+        double num4=d;
+        double res;
+        res=floor(d);
+        return (res);
+    }
  };
  
  int main()
@@ -105,18 +133,26 @@ using namespace std;
      int b=5;
      int added=b1.add(a,b);
      int subed=b1.sub(a,b);
+     
+    double f=3.4;
+    double d=5.5;
+    double ceiled=b1.lan(f);
+    double floored=b1.ran(d);
 
      b1.fun(3);
      b1.swap(5,7);
      b1.reverse(1234);
      b1.large(1);
+     b1.index(0);
      
      cout<<"the academy 1 - "<<b1.name<<"\n"<<"the years - "<<b1.years<<"\n";
      cout<<"the academy 2 - "<<b2.name<<"\n"<<"the years - "<<b2.years<<"\n";
      cout<<"the money - "<<salary<<endl;
      cout<<"the addition of two number - "<<added<<"\n";
      cout<<"the subtraction of two number - "<<subed<<endl;
-     
+     cout<<" The ceil of "<<"("<<f<<")"<<" is "<<ceiled<<endl;
+     cout<<" The floor of "<<"("<<d<<")"<<" is "<<floored<<endl;
+
      return 0;
  }
  

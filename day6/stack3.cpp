@@ -1,88 +1,81 @@
+// Online C++ compiler to run C++ program online
 #include <iostream>
-#include <stdlib>
-
 #define MAX_SIZE 100
+using namespace std;
 
-// Define a structure for the stack
-struct stack {
+struct stack 
+{
     int items[MAX_SIZE];
     int top;
 };
 
-// Function to initialize the stack
-void initialize(struct stack *s) {
-    s->top = -1;
+void initialise(struct stack *s)
+{
+    s->top=-1;
 }
-
-// Function to check if the stack is empty
-int isEmpty(struct stack *s) {
-    return s->top == -1;
+int isEmpty(struct stack *s)
+{
+   return s->top==-1;
 }
-
-// Function to check if the stack is full
-int isFull(struct stack *s) {
-    return s->top == MAX_SIZE - 1;
+int isFull(struct stack *s)
+{
+  return  s->top==MAX_SIZE -1;
 }
-
-// Function to push an element onto the stack
-void push(struct stack *s, int value) {
-    if (isFull(s)) {
-        cout<<"stack overflow<<"\n";
-        return;
+void push(struct stack *s,int value)
+{
+    if(isFull(s))
+    {
+        cout<<"stack overflow ";
+        return ;
     }
-    s->items[++s->top] = value;
+    s->items[++s->top]=value;
 }
-
-// Function to pop an element from the stack
-int pop(struct stack *s) {
-    if (isEmpty(s)) {
-        cout<<"stack underflow<<"\n";
+int pop(struct stack *s)
+{
+    if(isEmpty(s))
+    {
+        cout<<"stack underflow";
         return -1;
     }
-    return s->items[s->top--];
+  return   s->items[s->top--];
 }
-
-// Function to peek at the top element of the stack
-int peek(struct stack *s) {
-    if (isEmpty(s)) {
-        cout<<"stack is empty<<"\n";
-        return -1;
-    }
-    return s->items[s->top];
+int peek(struct stack *s)
+{
+    cout<<"stack is empty "
+    return -1;
 }
-
-int main() {
-    struct stack s;
-    initialize(&s);
-
-    // Push 10 elements onto the stack
-    push(&s, 10);
-    push(&s, 20);
-    push(&s, 30);
-    push(&s, 40);
-    push(&s, 50);
-    push(&s, 60);
-    push(&s, 70);
-    push(&s, 80);
-    push(&s, 90);
-    push(&s, 100);
-
-    // Create an array to store the popped elements
-    int poppedArray[MAX_SIZE];
-    int poppedIndex = 0;
-
-    // Pop elements from the stack and store them in the array
-    while (!isEmpty(&s)) {
-        int poppedElement = pop(&s);
-        poppedArray[poppedIndex++] = poppedElement;
+return s->items[s->top];
+ }
+ 
+ int main()
+ {
+     struct stack *s
+     initialise(&s);
+     
+     push(&s,10);
+     push(&s,20);
+     push(&s,30);
+     push(&s,40);
+     push(&s,50);
+     push(&s,60);
+     push(&s,70);
+     push(&s,80);
+     push(&s,90);
+     push(&s,100);
+     
+     int poppedarray[MAX_SIZE];
+     int poppedindex=0;
+    
+    while(!isEmpty(&s))
+    {
+        int poppedelement = pop(&s);
+        int poppedarray[poppedindex++];
     }
-
-    // Print the popped elements stored in the array
-    cout<<"Popped elements: ";
-    for (int i = poppedIndex - 1; i >= 0; i--) {
-        cout<<poppedArray[i];
+    
+    for(int i = poppedindex - 1;i>=0;i--)
+    {
+        cout<<poppedarray[i];
     }
     cout<<"\n";
-
-    return 0;
-}
+ return 0;
+ }

@@ -1,6 +1,6 @@
 //C++ Program to Find Largest Among Three Numbers
-#include<iostream>
-using namespace std;
+#include<iostream.h>
+#include<conio.h>
 int main()
 {
     int num1,num2,num3;
@@ -31,5 +31,5 @@ int main()
     {
         cout<<"\nAll number are equal";
     }
-    return 0;
+    getch();
 }

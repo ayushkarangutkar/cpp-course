@@ -6,6 +6,16 @@ int main()
     int num1,num2,num3;
     cout<<"\nEnter value of three number";
     cin>>num1>>num2>>num3;
+    cout<<"num1 = ";
+    cin>>num1;
+    cout<<"\n";
+    cout<<"num2 = ";
+    cin>>num2;
+    cout<<"\n";
+    cout<<"num3 =";
+    cin>>num3;
+    cout<<"\n";
+
     if(num1>num2 && num1>num3)
     {
         cout<<"\n The largest num is "<<num1;

@@ -4,8 +4,7 @@ using namespace std;
 int main()
 {
     int num1,num2,num3;
-    cout<<"\nEnter value of three number";
-    cin>>num1>>num2>>num3;
+    cout<<"\nEnter value of three number"<<endl;
     cout<<"num1 = ";
     cin>>num1;
     cout<<"\n";

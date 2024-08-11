@@ -49,14 +49,12 @@ void PrintHospitalData(
 			<< "				 "
 			<< "	 "
 			<< hospitals[i].price 
-			<< "		 "
-			<< endl; 
+			<< "		 "<< endl; 
 	} 
     cout << endl << endl; 
 } 
 
 // Function to print the patient 
-// data in the hospital 
 void PrintPatientData( 
 	vector<Patient>& patients, 
 	vector<Hospital>& hospitals) 
@@ -86,7 +84,6 @@ void PrintPatientData(
 	} 
     cout << endl << endl; 
 } 
-
 // Comparator function to sort the 
 // hospital data by name 
 bool name(Hospital& A, Hospital& B) 
@@ -105,8 +102,7 @@ void SortHospitalByName(
 		name); 
 
 	cout << "SORT BY NAME:"
-		<< endl 
-		<< endl; 
+		<< endl << endl; 
 	PrintHospitalData(hospitals); 
 } 
 
@@ -118,7 +114,6 @@ bool rating(Hospital& A, Hospital& B)
 } 
 
 // Function to sort the hospital 
-// data by namerating 
 void SortHospitalByRating(vector<Hospital> hospitals) 
 { 
 	sort(hospitals.begin(), 
@@ -160,7 +155,6 @@ bool beds_price(Hospital& A, Hospital& B)
 { 
 	return A.price < B.price; 
 } 
-
 // Function to sort the hospital 
 void SortByBedsPrice( 
 	vector<Hospital> hospitals) 
@@ -224,7 +218,6 @@ void HospitalManagement(
 
 	// Create Objects for hospital 
 	Hospital h; 
-
 	// Initialize the data 
 	for (int i = 0; i < 4; i++) { 
 		h.H_name = hospital_Name[i]; 
@@ -258,21 +251,17 @@ void HospitalManagement(
 	SortByBedsAvailable(hospitals); 
 	SortByBedsPrice(hospitals); 
 } 
-
 int main() 
 { 
 	// Stores hospital data and 
-	// the user data 
 	string patient_Name[] = { "P1", "P2", "P3", "P4" }; 
 	int patient_Id[] = { 2, 3, 4, 1 }; 
 	string patient_Contact[] 
-		= { "234534XXX7", "234576XXX2", "857465XXX9", 
-			"567657XXX0" }; 
+		= { "234513XXX7", "234521XXX2", "8574621XXX9", "567654XXX0" }; 
 	int bookingCost[] = { 1000, 1200, 1100, 600 }; 
 
 	string hospital_Name[] = { "H1", "H2", "H4", "H3" }; 
-	string locations[] = { "Bangalore", "Bangalore", 
-						"Mumbai ", "Prayagraj" }; 
+	string locations[] = {"Delhi", "Bihar","Mumbai ","Pune" }; 
 	int beds[] = { 4, 5, 6, 9 }; 
 	float ratings[] = { 5.2, 4.1, 3.4, 5.9 }; 
 	string hospital_Contact[] 
@@ -285,6 +274,5 @@ int main()
 		patient_Name, patient_Id, patient_Contact, 
 		bookingCost, hospital_Name, locations, beds, 
 		ratings, hospital_Contact, doctor_Name, prices); 
-
 	return 0; 
 }

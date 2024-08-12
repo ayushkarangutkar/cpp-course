@@ -3,6 +3,7 @@
 #include<string>
 using namespace std;
 
+//In this class calculator 
 class calculator
 {
     public:
@@ -28,12 +29,14 @@ class calculator
         
         if(ch=='+')
         {
+           //This is addition 
             cout<<"result :- "<<endl;
             result=num1+num2;
             cout<<num1<<" "<<'+'<<" "<<num2<<" = "<<result<<endl;
         }
         else if(ch=='-')
         {
+          //This is subtraction 
             cout<<"result : - "<<endl;
             result=num1-num2;
             cout<<num1<<" "<<'-'<<" "<<num2<<" = "<<result<<endl;
@@ -41,18 +44,21 @@ class calculator
         }
         else if(ch=='*')
         {
+          //This is multiply 
             cout<<"result :-  "<<endl;
             result=num1*num2;
             cout<<num1<<" "<<'*'<<" "<<num2<<" = "<<result<<endl;
         }
         else if(ch=='/')
         {
+         //This is division 
             cout<<"result :- "<<endl;
             result=num1/num2;
             cout<<num1<<" "<<'/'<<" "<<num2<<" = "<<result<<endl;
         }
         else if(ch == '%')
         {
+        //This is modulus 
             cout<<"result :- "<<endl;
             result=num1%num2;
             cout<<num1<<" % "<<num2<<" = "<<result
@@ -63,6 +69,7 @@ class calculator
     int main()
     { 
         char x;
+       //Here we use do while code 
         do
         {
         calculator c1;
@@ -72,3 +79,5 @@ class calculator
         }
         while(x !='n');
     }
+
+   // Here is the end of this code//

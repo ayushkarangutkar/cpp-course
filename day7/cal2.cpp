@@ -1,6 +1,7 @@
 #include<iostream>
 #include<math.h>               
 #include<string>
+
 using namespace std;
 
 //In this class calculator 

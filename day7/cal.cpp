@@ -7,8 +7,7 @@ using namespace std;
 class Calculator
 {
    float a, b;
-public:
-   
+public:   
     // Function to take input
     // from user
     void result() 
@@ -54,17 +53,16 @@ public:
         }
     }
 };
- 
-// Driver code
+
 int main() 
 {
     int ch;
     Calculator c; 
-    cout << "Enter 1 to Add 2 Numbers" << 
-            "\nEnter 2 to Subtract 2 Numbers" << 
-            "\nEnter 3 to Multiply 2 Numbers" << 
-            "\nEnter 4 to Divide 2 Numbers" << 
-            "\nEnter 0 To Exit";
+    cout << "Enter 1 for + " << 
+            "\nEnter 2 for - " << 
+            "\nEnter 3 for * " << 
+            "\nEnter 4 for \ " << 
+            "\nEnter 0 for getout";
          
     do
     {
@@ -72,35 +70,34 @@ int main()
         cin >> ch;
         switch (ch)
         {
+         
         case 1:
-             
             // result function invoked
             c.result();     
-             
             // add function to calculate sum
-            cout << "Result: " << 
+            cout <<num1<< " + "<<num2<<" = "<<
                      c.add() << endl; 
             break;
-        case 2:
-             
+         
+        case 2:             
             // sub function to calculate 
             // difference
             c.result();
-            cout << "Result: " << 
+            cout <<num1<< " -  "<<num2<<" = "<<
                      c.sub() << endl; 
             break;
+         
         case 3:
-            c.result();
-             
+            c.result();            
             // mul function to calculate product
-            cout << "Result: " << 
+            cout <<num1<< " * "<<num2<<" = "<<
                      c.mul() << endl; 
             break;
+         
         case 4:
-            c.result();
-             
+            c.result();             
             // div function to calculate division
-            cout << "Result: " << 
+             cout <<num1<< " \ "<<num2<<" = "<< 
                      c.div() << endl; 
             break;
         }

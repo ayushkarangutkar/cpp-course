@@ -1,5 +1,5 @@
 #include<iostream>
-#include<math.h>
+#include<math.h>               //https://www.geeksforgeeks.org/calculator-using-classes-in-cpp/
 #include<string>
 using namespace std;
 

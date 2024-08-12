@@ -68,8 +68,10 @@ class calculator
 };  
     int main()
     { 
+        //Here we use do while loop
+        //user input
+ 
         char x;
-       //Here we use do while code 
         do
         {
         calculator c1;

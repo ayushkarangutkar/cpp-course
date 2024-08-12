@@ -1,3 +1,5 @@
+// C++ program of digital calculator 
+
 #include<iostream>
 #include<math.h>               
 #include<string>

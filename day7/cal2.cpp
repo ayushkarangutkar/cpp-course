@@ -6,6 +6,9 @@ using namespace std;
 class calculator
 {
     public:
+
+    // Function to take input
+    // from user
     void cal()
     {
         int num1,num2,result;

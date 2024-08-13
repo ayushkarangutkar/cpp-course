@@ -1,6 +1,6 @@
 #include<iostream>
 #include<math.h>
-using namespace std;
+using namespace std;     rough idea void run(char na) and pass string for part 2
 
 class calculator
 {
@@ -9,8 +9,9 @@ class calculator
     {
         cout<<"THE CALCULATOR"<<endl;
     }
-    void fun()
+    void fun(int n)
     {
+        int d=n;
         int a,b,c,choice;
         cout<<"1.ADD"<<endl<<"2.SUB"<<endl<<"3.MUL"<<endl<<"4.DIV"<<endl;
         cout<<"Enter the choice"<<endl;

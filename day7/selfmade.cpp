@@ -1,5 +1,6 @@
 #include<iostream>
 #include<math.h>
+#include<string>
 using namespace std;     
 
 class calculator
@@ -7,12 +8,13 @@ class calculator
     public:
     calculator()
     {
-        cout<<"THE CALCULATOR"<<endl;
+        cout<<"THE DIGITAL CALCULATOR"<<endl;
     }
     void fun(int n)
     {
         int d=n;
         int a,b,c,choice;
+        
         cout<<"1.ADD"<<endl<<"2.SUB"<<endl<<"3.MUL"<<endl<<"4.DIV"<<endl;
         cout<<"Enter the opertor as per number"<<endl;
         cout<<"choice = ";
@@ -45,6 +47,7 @@ class calculator
             float num,res;
             int want;
             float pi=3.14159265;
+            
             cout<<"1.sqrt"<<endl<<"2.sin"<<endl<<"3.cos"<<endl<<"4.tan"<<endl;
             cout<<"enter the operator as per number"<<endl;
             cout<<"choice = "<<endl;
@@ -76,20 +79,25 @@ class calculator
         calculator c1;
         string  r;
         int n;
-        int num;
+        string a;
+        char d;
         cout<<" enter number or name "<<endl;
-        cin>>num;
-        if(num%2==0)
-        {
-        cout<<" The number :- ";
-        cin>>n;
-        c1.fun(n);
-        }
-        else
-        {
-        cout<<" The name :- ";
-        cin>>r;
-        c1.run(r);
-        }
-        return 0;
+        cin>>a;
+      do
+      {
+         if(a!="max")
+          {
+         cout<<" The number :- ";
+         cin>>n;
+         c1.fun(n);
+          }
+         else 
+           {
+         cout<<" The name :- ";
+         cin>>r;
+         c1.run(r);
+           }
+        cout<<"\nEnter N to exit or Y to enter : \n ";
+        cin>>d;
+      } while(d!='n');
     }

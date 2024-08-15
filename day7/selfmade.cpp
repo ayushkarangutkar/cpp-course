@@ -79,13 +79,13 @@ class calculator
         calculator c1;
         string  r;
         int n;
-        string a;
+        string p;
         char d;
         cout<<" enter number or name "<<endl;
-        cin>>a;
+        cin>>p;
       do
       {
-         if(a!="max")
+         if(p!="purvamadam")
           {
          cout<<" The number :- ";
          cin>>n;

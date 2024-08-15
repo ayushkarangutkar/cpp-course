@@ -127,7 +127,7 @@ class calculator
          cin>>r;
          c1.part2(r);
            }
-        cout<<"\nEnter N to exit or Y to enter : \n ";
+        cout<<"\nEnter N(no) to exit or Y(yes) to enter : \n ";
         cin>>d;
         cout<<"\n";
       } while(d!='n');

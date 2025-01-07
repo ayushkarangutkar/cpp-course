@@ -1,0 +1,8 @@
+#include<iostream.h>
+#include<stdio.h>
+
+void main() 
+{
+ya madhe pan nahi aahe ayush la vichara 
+return 
+}
